@@ -1,0 +1,17 @@
+.add-user-dialog {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.dialog-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.dialog-buttons button {
+    margin-left: 10px;
+}
