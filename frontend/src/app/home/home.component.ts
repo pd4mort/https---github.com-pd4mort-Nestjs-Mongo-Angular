@@ -22,6 +22,7 @@ export class HomeComponent {
   getData() {
     this.apiService.getUser().subscribe(data => {
       this.data = data;
+      console.log(this.data)
     });
   }
 
@@ -29,9 +30,7 @@ export class HomeComponent {
     const dialogRef = this.dialog.open(AddUserDialogComponent);
 
     dialogRef.afterClosed().subscribe(result => {
-      if (result) {
         this.getData();
-      }
     });
   }
 
